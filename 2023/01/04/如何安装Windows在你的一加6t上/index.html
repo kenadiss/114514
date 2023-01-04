@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">archive_a | Canady&#39;s Blog - 世界灿烂盛大，欢迎回家！</title>
+  <title itemprop="name">如何安装Windows在你的一加6t上 | Canady&#39;s Blog - 世界灿烂盛大，欢迎回家！</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -394,91 +394,199 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
 <div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
-    </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2023年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      01月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2023/01/04/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85Windows%E5%9C%A8%E4%BD%A0%E7%9A%84%E4%B8%80%E5%8A%A06t%E4%B8%8A/">
-                          <span style="color:#0bf;">
-                          04日21:05:09</span>
-                          如何安装Windows在你的一加6t上
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2023/01/04/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%81/">
-                          <span style="color:#0bf;">
-                          04日20:53:39</span>
-                          欢迎来到我的博客！
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2023/01/04/hello-world/">
-                          <span style="color:#0bf;">
-                          04日04:31:44</span>
-                          Hello World
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">如何安装Windows在你的一加6t上</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2023-1-4&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <p>本文由<a target="_blank" rel="noopener" href="https://silime.gitee.io/2021/05/20/Windows10-on-arm64/">https://silime.gitee.io/2021/05/20/Windows10-on-arm64/</a>修改而来</p>
+<h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><ol>
+<li><p>下载这些文件到你的电脑</p>
+</li>
+<li><p>下载PE<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Pgaz-bdTiOKFXGAxgYCX6A">20h2pe_new.zip</a><br>提取码：1234<br>PS: 嫌百度网盘慢可以用这个<a target="_blank" rel="noopener" href="https://jixia.baidui.vip/#/jxdo">https://jixia.baidui.vip/#/jxdo</a></p>
+</li>
+<li><p>下载dism++<br><a target="_blank" rel="noopener" href="https://github.com/kenadiss/kenadiss.github.io/raw/main/%E6%96%87%E4%BB%B6/Dism%2B%2B.7z">Dism++</a></p>
+</li>
+<li><p>下载ARM版驱动<br><a target="_blank" rel="noopener" href="https://github.com/edk2-porting/WOA-Drivers/releases/download/v2.0rc1/fajita.tar.gz">fajita（fajita是一加6t的代号）</a></p>
+</li>
+<li><p>下载windows10 arm64 iso<br><a target="_blank" rel="noopener" href="https://uupdump.net/download.php?id=b2091b96-c83b-4c6b-b6c5-cea72fef0000&pack=zh-cn&edition=professional">UUP dump</a></p>
+</li>
+<li><p>下载uefi<br><a target="_blank" rel="noopener" href="https://github.com/edk2-porting/edk2-msm/releases/download/v2.0rc2/boot-fajita.img">Github</a></p>
+</li>
+<li><p>下载parted<br><a target="_blank" rel="noopener" href="https://pwdx.lanzoux.com/iUgSEmkrlmh">parted</a></p>
+</li>
+</ol>
+<h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><ol>
+<li>新建new.txt 文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">diskpart</span><br><span class="line">sel disk 0</span><br><span class="line">sel part 17 <span class="comment">#注意17是你的esp分区号</span></span><br><span class="line">assign letter=Y</span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"></span><br><span class="line">bcdedit /store Y:\efi\microsoft\boot\bcd /set &#123;Default&#125; testsigning on</span><br><span class="line">bcdedit /store Y:\efi\microsoft\boot\bcd /set &#123;Default&#125; nointegritychecks on</span><br><span class="line"></span><br><span class="line">shutdown -s -t 0</span><br></pre></td></tr></table></figure></li>
+<li>电脑连接手机进入TWRP</li>
+</ol>
+<p>分区（仅限一加6T复制粘贴）<br>这可能会损坏你的设备，不慎变砖请使用9008恢复你的设备</p>
+<p>电脑adb shell<br>输入以下指令分区：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> /sdcard/parted /sbin/ &amp;&amp; <span class="built_in">chmod</span> 755 /sbin/parted</span><br><span class="line">umount /data &amp;&amp; umount /sdcard</span><br><span class="line">parted /dev/block/sda</span><br><span class="line"><span class="built_in">rm</span> 17 <span class="comment">#17是userdata分区号 </span></span><br><span class="line">mkpart esp fat32 6559MB 7000MB</span><br><span class="line">mkpart pe fat32 7000MB 10000MB</span><br><span class="line">mkpart win ntfs 10000MB 57GB</span><br><span class="line">mkpart userdata ext4 58GB 125GB</span><br><span class="line"><span class="comment">#设置17分区为esp分区，这步很重要</span></span><br><span class="line"><span class="built_in">set</span> 17 esp on</span><br></pre></td></tr></table></figure>
+<p>指令最好一条一条复制粘贴！！！！！！！！！！！<br>如果出现了错误信息最好重启手机，实在不行就9008(doge)</p>
+<ol start="3">
+<li><p>重启手机！！！重启手机！！！到TWRP。不能忽略！！！这一步很重要！！！<br>电脑adb shell<br>输入以下指令格式化新分的分区</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#某些TWRP是 mkfs.fat -F32 -s1 /dev/block/bootdevice/by-name/pe</span></span><br><span class="line">mkfs.fat -F32 -s1 /dev/block/by-name/pe</span><br><span class="line">mkfs.fat -F32 -s1 /dev/block/by-name/esp</span><br><span class="line">mkfs.ntfs -f /dev/block/by-name/win</span><br><span class="line">mke2fs -t ext4 /dev/block/by-name/userdata</span><br></pre></td></tr></table></figure>
+<p>还是一样，强烈推荐一条指令一条指令复制！！！</p>
+</li>
+<li><p>重启手机！！！重启手机！！！到TWRP。不能忽略！！！这一步很重要！！！重启手机！！！重启手机！！！到TWRP。不能忽略！！！这一步很重要！！！<br>重启手机！！！重启手机！！！到TWRP。不能忽略！！！这一步很重要！！！重启手机！！！重启手机！！！到TWRP。不能忽略！！！这一步很重要！！！<br>（真的很重要，我在这里栽了很多次坑）</p>
+</li>
+</ol>
+<p>电脑adb shell<br>挂载pe分区到&#x2F;mnt</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/block/by-name/pe /mnt</span><br></pre></td></tr></table></figure>
+
+<p>把pe文件复制到&#x2F;sdcard&#x2F;<br>确认你的手机的”&#x2F;sdcard&#x2F;“目录下有三个文件夹和一个文件：<br>Boot<br>efi<br>sources<br>bootmgr.efi<br>确认无误后电脑输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> -r /sdcard/* /mnt</span><br></pre></td></tr></table></figure>
+<p>把PE文件复制到PE分区</p>
+<p>重启手机进入fastboot</p>
+<h3 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h3><ol>
+<li><p>把UEFI加载进手机里</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot boot boot-fajita.img</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把下好的Windows 11 arm64、new.txt、ARM版的驱动和Dims++复制进U盘</p>
+</li>
+<li><p>进入PE系统</p>
+</li>
+</ol>
+<p>把U盘插到手机上<br>打开U盘里的new.txt<br>以下指令均可在new.txt里复制</p>
+<p>挂载ESP分区为Y:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">diskpart</span><br><span class="line">select disk 0</span><br><span class="line">list part</span><br><span class="line">select part 17 //17为你的esp分区号</span><br><span class="line">assign letter=Y</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>安装 Windows 11 arm64</li>
+</ol>
+<p>打开dism++ 把释放镜像到D盘，引导分区选Y盘（其实不用选，他给你选好了）</p>
+<p>装好系统后安装驱动<br>点D盘<br>点打开会话<br>点驱动管理<br>点右下角的安装驱动<br>把驱动文件装进去</p>
+<ol start="5">
+<li><p>装好驱动后<br>关闭驱动签名<br>输入以下指令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /store Y:\efi\microsoft\boot\bcd /set &#123;Default&#125; testsigning on</span><br><span class="line">bcdedit /store Y:\efi\microsoft\boot\bcd /set &#123;Default&#125; nointegritychecks on</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启手机进入fastboot 再加载一次UEFI就可以进Windows了</p>
+</li>
+</ol>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://kenadiss.github.io/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://kenadiss.github.io/WeChanQR.jpg"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2023/01/04/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%81/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://kenadiss.github.io/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                欢迎来到我的博客！</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    <div id="waline"></div>
+    <style>
+    #waline textarea {
+        box-sizing: border-box;
+        background: url("https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif") 100% 100% no-repeat;
+    }
+    </style>
+    <script>
+        Waline({
+              el: '#waline',
+              serverURL: 'https://kenadiss.github.io',
+              pageSize: '10',
+              lang: 'en',
+              requiredFields: ['nick','mail'], //设置必填项
+              placeholder: '祝开开心心！',
+              visitor: 'true',
+              emoji: [
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+              ],
+              avatar: 'mp',
+              dark: 'auto',
+            });
+    </script>
+
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">
